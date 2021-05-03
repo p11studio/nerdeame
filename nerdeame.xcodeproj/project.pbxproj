@@ -15,6 +15,8 @@
 		217448DF26379EA500062512 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217448B426379EA300062512 /* ContentView.swift */; };
 		217448E026379EA500062512 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 217448B526379EA400062512 /* Assets.xcassets */; };
 		217448E126379EA500062512 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 217448B526379EA400062512 /* Assets.xcassets */; };
+		9DDCDCCF18D3D6725C0BE149 /* Pods_nerdeame__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CDF8309F4C24DE532A86251 /* Pods_nerdeame__iOS_.framework */; };
+		EF9105F0F09378068B149F7A /* Pods_nerdeame__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E491BE76D29B95260B2595EE /* Pods_nerdeame__macOS_.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,12 @@
 		217448D526379EA500062512 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		217448D926379EA500062512 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		217448DB26379EA500062512 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CDF8309F4C24DE532A86251 /* Pods_nerdeame__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nerdeame__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C2DBC58477B439683BC3585 /* Pods-nerdeame (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nerdeame (iOS).debug.xcconfig"; path = "Target Support Files/Pods-nerdeame (iOS)/Pods-nerdeame (iOS).debug.xcconfig"; sourceTree = "<group>"; };
+		942A311903FE7CB5F98F4955 /* Pods-nerdeame (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nerdeame (macOS).release.xcconfig"; path = "Target Support Files/Pods-nerdeame (macOS)/Pods-nerdeame (macOS).release.xcconfig"; sourceTree = "<group>"; };
+		A6DAD7640C51A574EE4FBAD5 /* Pods-nerdeame (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nerdeame (macOS).debug.xcconfig"; path = "Target Support Files/Pods-nerdeame (macOS)/Pods-nerdeame (macOS).debug.xcconfig"; sourceTree = "<group>"; };
+		AE608BEDBF9921781DC83543 /* Pods-nerdeame (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nerdeame (iOS).release.xcconfig"; path = "Target Support Files/Pods-nerdeame (iOS)/Pods-nerdeame (iOS).release.xcconfig"; sourceTree = "<group>"; };
+		E491BE76D29B95260B2595EE /* Pods_nerdeame__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nerdeame__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DDCDCCF18D3D6725C0BE149 /* Pods_nerdeame__iOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF9105F0F09378068B149F7A /* Pods_nerdeame__macOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +102,8 @@
 				217448CD26379EA500062512 /* Tests iOS */,
 				217448D826379EA500062512 /* Tests macOS */,
 				217448BB26379EA500062512 /* Products */,
+				3D0EEC855A150F0A9B8EFB21 /* Pods */,
+				620572294A73B50C64A0FE61 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,6 +163,26 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
+		3D0EEC855A150F0A9B8EFB21 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C2DBC58477B439683BC3585 /* Pods-nerdeame (iOS).debug.xcconfig */,
+				AE608BEDBF9921781DC83543 /* Pods-nerdeame (iOS).release.xcconfig */,
+				A6DAD7640C51A574EE4FBAD5 /* Pods-nerdeame (macOS).debug.xcconfig */,
+				942A311903FE7CB5F98F4955 /* Pods-nerdeame (macOS).release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		620572294A73B50C64A0FE61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CDF8309F4C24DE532A86251 /* Pods_nerdeame__iOS_.framework */,
+				E491BE76D29B95260B2595EE /* Pods_nerdeame__macOS_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -158,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 217448E426379EA500062512 /* Build configuration list for PBXNativeTarget "nerdeame (iOS)" */;
 			buildPhases = (
+				8E17465D1604D80C86703CB0 /* [CP] Check Pods Manifest.lock */,
 				217448B626379EA400062512 /* Sources */,
 				217448B726379EA400062512 /* Frameworks */,
 				217448B826379EA400062512 /* Resources */,
+				4B8EDB55932814BD6B8C7BF9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -175,6 +209,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 217448E726379EA500062512 /* Build configuration list for PBXNativeTarget "nerdeame (macOS)" */;
 			buildPhases = (
+				2FBA54F0FB5ED2DE0A162D94 /* [CP] Check Pods Manifest.lock */,
 				217448BE26379EA500062512 /* Sources */,
 				217448BF26379EA500062512 /* Frameworks */,
 				217448C026379EA500062512 /* Resources */,
@@ -302,6 +337,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FBA54F0FB5ED2DE0A162D94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-nerdeame (macOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B8EDB55932814BD6B8C7BF9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-nerdeame (iOS)/Pods-nerdeame (iOS)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-nerdeame (iOS)/Pods-nerdeame (iOS)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-nerdeame (iOS)/Pods-nerdeame (iOS)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E17465D1604D80C86703CB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-nerdeame (iOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		217448B626379EA400062512 /* Sources */ = {
@@ -469,6 +568,7 @@
 		};
 		217448E526379EA500062512 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C2DBC58477B439683BC3585 /* Pods-nerdeame (iOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -490,6 +590,7 @@
 		};
 		217448E626379EA500062512 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE608BEDBF9921781DC83543 /* Pods-nerdeame (iOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -512,10 +613,12 @@
 		};
 		217448E826379EA500062512 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6DAD7640C51A574EE4FBAD5 /* Pods-nerdeame (macOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_PREVIEWS = YES;
@@ -534,10 +637,12 @@
 		};
 		217448E926379EA500062512 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 942A311903FE7CB5F98F4955 /* Pods-nerdeame (macOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_PREVIEWS = YES;
